@@ -68,6 +68,7 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   return str1.lenght===str2.lenght;
+  
 }
 
 function menosQueNoventa(num) {
@@ -169,7 +170,7 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero === 0){
-    return "Cero es número neutro, digita otro número";
+    return false;
   }
   if (numero > 0) {
     return "Es positivo";
