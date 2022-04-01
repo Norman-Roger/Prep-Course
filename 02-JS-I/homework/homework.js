@@ -67,7 +67,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.lenght === str2.lenght;
+  return str1.lenght===str2.lenght;
 }
 
 function menosQueNoventa(num) {
@@ -169,9 +169,9 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if(numero === 0){
-    return "Cero es neutro, digita otro número";
+    return "Cero es número neutro, digita otro número";
   }
-  else if (numero > 0) {
+  if (numero > 0) {
     return "Es positivo";
   }
     else{
@@ -190,7 +190,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combina = nombre + '' + apellido;
+  var combina = nombre + ' ' + apellido;
   return combina;
 }
 
