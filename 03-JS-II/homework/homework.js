@@ -48,13 +48,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if(idioma === "aleman"){
-    return 'Guten Tag!';
+    return "Guten Tag!";
   }else if(idioma === 'mandarin'){
-    return 'Ni hao!';
+    return "Ni hao!";
   }else if(idioma === 'ingles'){
-    return 'Hello!';
+    return "Hello!";
   }else{
-    return 'Hola!';
+    return "Hola!";
   }
 }
 
@@ -110,14 +110,14 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if(numero %  3 === 0 && numero % 5 === 0){
+    return "fizzbuzz";
+  }
   if(numero % 3 === 0){
     return "fizz";
   }
   if(numero % 5 === 0){
     return "buzz";
-  }
-  if(numero %  3 === 0 && numero % 5 === 0 && numero % 15){
-    return "fizzbuzz";
   }
   return numero;
 }
@@ -160,9 +160,9 @@ function esPrimo(numero) {
   }
   for(var i = 2; i < numero; i++){
     if(numero % i === 0){
-      return false;
+      return true;
     }
-    return true;
+    return false;
   }
 }
 
