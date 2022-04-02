@@ -51,7 +51,7 @@ function saludo(idioma) {
     return "Guten Tag!";
   }
   else if(idioma === "mandarin"){
-    return "Ni hao!";
+    return "Ni Hao!";
   }
   else if(idioma === "ingles"){
     return "Hello!";
