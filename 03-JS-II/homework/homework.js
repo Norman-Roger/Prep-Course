@@ -156,13 +156,13 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   if(numero < 2) return false;
-  if(numero >= 2) return true;
+  if(numero === 2) return true;
   for(var i = 2; i < numero; i++){
     if(numero % i === 0){
-      return true;
+      return false;
     }
   } 
-  return false;
+  return true;
 }
 
 function esVerdadero(valor){
