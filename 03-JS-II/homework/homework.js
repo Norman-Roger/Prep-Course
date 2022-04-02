@@ -49,11 +49,14 @@ function saludo(idioma) {
   // Tu código:
   if(idioma === "aleman"){
     return "Guten Tag!";
-  }else if(idioma === "mandarin"){
+  }
+  else if(idioma === "mandarin"){
     return "Ni hao!";
-  }else if(idioma === "ingles"){
+  }
+  else if(idioma === "ingles"){
     return "Hello!";
-  }else{
+  }
+  else{
     return "Hola!";
   }
 }
@@ -156,10 +159,10 @@ function esPrimo(numero) {
   if(numero >= 2) return true;
   for(var i = 2; i < numero; i++){
     if(numero % i === 0){
-      return false;
+      return true;
     }
   } 
-  return true;
+  return false;
 }
 
 function esVerdadero(valor){
